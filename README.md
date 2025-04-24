@@ -43,13 +43,14 @@ Requirements:
 - Linux on x86_64 or arm64 architecture (Windows Subsystem for Linux is also supported)
 - Latest version of [Node.js](https://nodejs.org/en) 18, 20, or 22
 
-Install Playwright and run tests automatically:
+Automatically install Playwright and run tests:
 
 1. Clone this repo to a new directory and navigate to this directory
 2. Run `./run_tests.sh`
 3. When asked if you want to overwrite `playwright.config.ts`, type `N` (False)
 
-Install Playwright and run tests manually:
+Manually install Playwright and run tests:
+
 1. Clone this repo to a new directory and navigate to this directory
 2. Download and install [Playwright](https://playwright.dev) (select defaults for all questions during installation)
 3. Move `delta.spec.ts` and `pom.ts` into the `tests` directory, and delete `tests/example.spec.ts`
