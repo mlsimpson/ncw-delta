@@ -48,7 +48,8 @@ Run tests:
 1. Clone this repo to a new directory and navigate to this directory
 2. Download and install [Playwright](https://playwright.dev) (select defaults for all questions during installation)
 3. Install Chromium and Firefox binaries for Playwright based on [install instructions](https://playwright.dev/docs/intro)
-4. Run the tests: `npx playwright test`
+4. Move `delta.spec.ts` and `pom.ts` into the `tests` directory
+5. Run the tests: `npx playwright test`
 
 Rationale:
 
