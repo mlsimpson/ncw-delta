@@ -49,10 +49,12 @@ Run tests:
 2. Download and install [Playwright](https://playwright.dev) (select defaults for all questions during installation)
 3. Install Chromium and Firefox binaries for Playwright based on [install instructions](https://playwright.dev/docs/intro)
 4. Move `delta.spec.ts` and `pom.ts` into the `tests` directory
-5. Run the tests: `npx playwright test`
+5. Run the tests: `npx playwright test --headed`
 
 Rationale:
 
 - Two automated tests are provided. One tests the 'happy path' of selecting valid options for all required components (From, To, Date). The other validates that a negative scenario can not happen (that is, a departure date in the past)
 - A minimal Page Object Model is utilized to provide quick and easy reuse and minimal new code when writing new tests.
 - At each step in the 'happy path', assertions are called to ensure success and stop the test if failed.
+- Tests are run in headed mode (that is, the actual browsers are used and appear on desktop during the tests). This is due to the fact that running these tests in headless mode triggers bot detection on the webapp
+
