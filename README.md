@@ -57,3 +57,4 @@ Rationale:
 - At each step in the 'happy path', assertions are called to ensure success and stop the test if failed
 - Tests are run in headed mode (that is, the actual browsers are used and appear on desktop during the tests). This is due to the fact that running these tests in headless mode triggers bot detection on the webapp
 - Per Playwright documentation, selecting locators via `getByRole` is preferred, so at locator strategy was prioritized while writing the automation scripts
+- Only Firefox and Chromium are browser targets, as WebKit was unable to open the date picker
